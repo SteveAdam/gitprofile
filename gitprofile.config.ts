@@ -2,14 +2,10 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'SteveAdam', // Your GitHub org/user name. (This is the only required config)
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
-  base: '/gitprofile/',
+
+  base: '/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -19,7 +15,7 @@ const CONFIG = {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
+          forks: true, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
@@ -52,31 +48,31 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Steve Adam',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: '',
+    twitter: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '', 
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    medium: '',
+    dev: '',
+    stackoverflow: '', 
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'steve.kyrosevents@gmail.com',
   },
   resume: {
     fileUrl:
@@ -88,23 +84,23 @@ const CONFIG = {
     'JavaScript',
     'React.js',
     'Node.js',
-    'Nest.js',
+    'TypeScript',
     'MySQL',
-    'PostgreSQL',
+    'MongoDB',
     'Git',
-    'Docker',
-    'PHPUnit',
+    'AWS',
+    'Svelte',
     'CSS',
-    'Antd',
+    'Flutter',
     'Tailwind',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'DeveInt Limited',
+      position: 'Quality Assurance',
+      from: 'June 2024',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://deveint.com',
     },
     {
       company: 'Company Name',
@@ -116,9 +112,15 @@ const CONFIG = {
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
+      name: 'Web and Mobile Development Bootcamp',
+      body: 'eMobilis Institute of Technology',
+      year: '2020',
+      link: 'https://example.com',
+    },
+    {
+      name: 'Introduction to Newtworking/ CCNA1/ CCNA2',
+      body: 'Cisco Networking Academy',
+      year: '2022',
       link: 'https://example.com',
     },
   ],
@@ -158,8 +160,8 @@ const CONFIG = {
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    source: '', // medium | dev
+    username: '', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
